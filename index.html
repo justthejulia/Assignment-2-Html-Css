@@ -1,0 +1,130 @@
+
+
+<!--This code is done by Yuiya Vaneyeva, 200573097 on March 22nd.-->
+<!-- It is Assignmnet 2-->
+
+
+<!DOCTYPE html>
+<html lang="en">            
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">   <!--hERE is the usual structure that allows us to have an indexfile-->
+<title>Jaws Poster</title> <!-- I have decided to have styles and index together in the same file-->
+<!-- I am creating tags to section my code properly -->
+<style> 
+
+  body, html {
+    height: 100%; 
+    margin: 0;
+    font-family: 'Arial', sans-serif;     
+    font-style: italic;
+    overflow-x: hidden;
+  }
+  .poster {
+    display: flex;
+    flex-direction: row;
+    font-size: calc(10px + 2vmin);
+    height: 100%; 
+  }
+  .left-panel {
+    background: url('Jaws.jpg') no-repeat center center;
+    background-size: cover;
+    flex: 0 0 40%; 
+    position: relative;
+    text-align: center;
+  }
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    font-weight: bold;
+    color: red;
+  }
+  .right-panel {
+    background-color: black;
+    flex: 0 0 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+  }
+  .tagline, .credits, .rating, .warning {
+    margin-bottom: 1em;
+  }
+  .tagline {
+    font-size: 1.8em;
+    text-decoration: solid;
+    text-decoration: dotted;
+    text-size-adjust: center;
+    text-align: center;
+    font-family: cursive;
+    color:red;
+    font-weight: bold;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+  .credits {
+    font-size: 1em;
+    font-size: medium;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+  .rating {
+    font-size: 0.7em;
+    text-align: center;
+    text-decoration: wavy;
+    text-transform: capitalize;
+  }
+  .warning {
+    font-size: 0.8em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+</style>
+</head>
+<body>
+  <div class="poster">
+    <div class="left-panel">
+    </div>
+    <div class="right-panel">
+      <div> <!--  Here I am making a Container for the text to align it with space-between -->
+        <p class="tagline">The terrifying motion picture<br>from the terrifying N 1 best seller.</p>
+      
+        <br>
+        <div class="credits">
+          ROY SCHEIDER<br>
+          ROBERT SHAW<br>
+          RICHARD DREYFUSS<br>
+          JAWS<br><br>
+          <!-- ... creating other credits other credits ... -->
+        </div>
+        <div>
+          <fieldset>
+            <p class="rating">
+              PG PARENTAL GUIDANCE SUGGESTED<br>
+              Some material may not be suitable for children
+            </p>
+          </fieldset>
+          <!-- here i am including some links for the viewer to be able to see more about jaws-->
+          <div class="links">
+            <p>Find out more about JAWS:</p>
+            <p><a href="https://en.wikipedia.org/wiki/Jaws_(film)" target="_blank" rel="noopener noreferrer">Official JAWS Website</a></p>
+            <p><a href="https://www.rottentomatoes.com/m/jaws" target="_blank" rel="noopener noreferrer">Reviews </a></p>
+            <p><a href="https://www.imdb.com/title/tt0073195/" target="_blank" rel="noopener noreferrer">IMDb</a></p>
+          </div>
+
+          <p class="warning">
+            <br>
+            
+            ...may be too INTENSE for younger children
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
